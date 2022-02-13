@@ -9,7 +9,7 @@
 
 </head>
 
-<body>
+<body class="body">
     <figure>
         <img src="/img/logo-DH.png" alt="Logo Digital House">
     </figure>
@@ -24,10 +24,12 @@
     <ul>
         <% for( let i = 0; i < movies.length; i++ ) { %>
         <li>
-            <a  href="/movies/detail/<%= movies[i].id %>"><%= movies[i].title %></a>
+            <a href="/movies/detail/<%= movies[i].id %>"><%= movies[i].title %></a>
         </li>
         <% } %>
 
     </ul>
 </body>
+<script src="/js/moviesList.js"></script>
+
 </html>
